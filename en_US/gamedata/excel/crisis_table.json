@@ -1,0 +1,160 @@
+{
+  "seasonInfo": [
+    {
+      "seasonId": "rune_season_2_1",
+      "startTs": 1612450800,
+      "endTs": 1613645999,
+      "name": "Operation Blade",
+      "crisisRuneCoinUnlockItem": {
+        "id": "randomMaterialRune_2",
+        "count": 1,
+        "type": "VOUCHER_MGACHA"
+      },
+      "permBgm": "rune_season_2_1_main",
+      "medalGroupId": "medalGroupActivityRune02",
+      "bgmHardPoint": 16,
+      "permBgmHard": "rune_season_2_1_main_challenge"
+    },
+    {
+      "seasonId": "rune_season_1_1",
+      "startTs": 1605106800,
+      "endTs": 1606301999,
+      "name": "Operation Pyrite",
+      "crisisRuneCoinUnlockItem": {
+        "id": "randomMaterialRune_1",
+        "count": 1,
+        "type": "VOUCHER_MGACHA"
+      },
+      "permBgm": "rune_season_1_1_main",
+      "medalGroupId": "medalGroupActivityRune01",
+      "bgmHardPoint": 16,
+      "permBgmHard": "rune_season_1_1_main_challenge"
+    },
+    {
+      "seasonId": "rune_season_0_1",
+      "startTs": 1599742800,
+      "endTs": 1600945199,
+      "name": "Operation Barrenland",
+      "crisisRuneCoinUnlockItem": {
+        "id": "randomMaterialRune_0",
+        "count": 1,
+        "type": "VOUCHER_MGACHA"
+      },
+      "permBgm": "rune_season_0_1_main",
+      "medalGroupId": null,
+      "bgmHardPoint": -1,
+      "permBgmHard": null
+    }
+  ],
+  "tempAppraise": [
+    {
+      "level": -1,
+      "data": "RANK_D"
+    },
+    {
+      "level": -1,
+      "data": "RANK_D"
+    },
+    {
+      "level": 0,
+      "data": "RANK_C"
+    },
+    {
+      "level": 2,
+      "data": "RANK_B"
+    },
+    {
+      "level": 4,
+      "data": "RANK_A"
+    },
+    {
+      "level": 8,
+      "data": "RANK_S"
+    },
+    {
+      "level": 12,
+      "data": "RANK_SS"
+    }
+  ],
+  "permAppraise": [
+    {
+      "level": -1,
+      "data": "RANK_D"
+    },
+    {
+      "level": -1,
+      "data": "RANK_D"
+    },
+    {
+      "level": 0,
+      "data": "RANK_C"
+    },
+    {
+      "level": 2,
+      "data": "RANK_B"
+    },
+    {
+      "level": 4,
+      "data": "RANK_A"
+    },
+    {
+      "level": 8,
+      "data": "RANK_S"
+    },
+    {
+      "level": 12,
+      "data": "RANK_SS"
+    },
+    {
+      "level": 16,
+      "data": "RANK_SSS"
+    }
+  ],
+  "mapRankInfo": {
+    "0": {
+      "rewards": [],
+      "unlockPoint": -1
+    },
+    "1": {
+      "rewards": [
+        {
+          "id": "CRISIS_SHOP_COIN",
+          "count": 20,
+          "type": "CRS_SHOP_COIN"
+        }
+      ],
+      "unlockPoint": 0
+    },
+    "2": {
+      "rewards": [
+        {
+          "id": "CRISIS_SHOP_COIN",
+          "count": 30,
+          "type": "CRS_SHOP_COIN"
+        }
+      ],
+      "unlockPoint": 2
+    },
+    "3": {
+      "rewards": [
+        {
+          "id": "CRISIS_SHOP_COIN",
+          "count": 50,
+          "type": "CRS_SHOP_COIN"
+        },
+        {
+          "id": "randomMaterial_1",
+          "count": 5,
+          "type": "VOUCHER_MGACHA"
+        }
+      ],
+      "unlockPoint": 4
+    }
+  },
+  "meta": "9omK1nUe2HnKGDeCmg3bIAv8e8u4QFXSYzKaMn0nWsfXdgqdhlPYIoyVEzN2yEI9qt7/XBjz0dI2MKaJGUBHJy4Pbsip+IZXEbEHMiI6/T0fez7eq1EL9XJYRDo4pSE3IlzRTIriuv3RiiuoOMy3VcuyjNUMQgJgdUGRJ78PR1rLa+LdzmcEiEl9++ClJeZGZ68tixqTuUXFDcaakLsPhgfymYhR0iCT8sk7zQhEPN86I5UCaML0Ajv5XDUXeWyVkaBcP1Swt1xIFfJpw0oZKeim7fKPaeEhzllEB4GdhwDIP2jz5S5npZXdm8uHkCrHbI1j9JSKrJnWl0o/kvR6rWTtLFKxiKOHrTRliqD/T1ngm/epc5S4mSjitlgFMnqA59gPP9pfHTMnxwY7OahnLcuzu9zi8qXRimDi0FDXzzFVMEACLDgyjgUPDOVeh/r1UWqb2NOce6jhe12jpohTKyV/wQrzuobvRykVvC+MHwaF2kXfRrK1y5+KzyBKplWJAvo+qHRs9ctP2OefmBQJuI31ZhxLfcjHP1egn1JnFx0vL1sy+Mk47LmVpSYs2WqvjdXMtXCEIYVMTrphxAddqjbf8DDuoOIDRcYxZObZlrJ3gL5NaUlI9T9SrFVaeworCghlHUmo6osIj6/61fvNkkWKsHBHbf+bp0iGdn70oOHQBpGqtXdMnTqIu7Ou3wFYXHlF6vqp448Q3QyFZZQpbgEKsGLxRMNq5Yiv1QhF3WIk3ZE/pz6DR2AEBXtOgT1XkCWnKhLMh3GhDdEVWwz09PohMLgY2zRZVN2ZbjuwdQQhBEcLRZTiIN/xaMhlEhRqrBXRYXq+/eTvyxFpOFjk8/G5hsQXBcIo5Dohe9RVFc3IP2jz5S5npZXdm8uHkCrHh1tkGHJc3yampA5YOeyCW0TJTjmGFiGuwvJcwH+jfsTLa+LdzmcEiEl9++ClJeZGVh1H01WcvSuBgxhycDokNyx2SW8l0YK+PcrZ7CTcaOTXdgqdhlPYIoyVEzN2yEI9IHUaDc++2Z2wlp9P8ipg1DfgrAXGuyn0Fs+UhpiJ7TKnPPzDp533tdRXpnswXLqjHiot7IyQHaXSaxpJf9q0jYB9L181sx3haqgVY6IzZeLbxBLszYZaXi41f/I147kYN96NJgewj8N+PenOLH0n/pjMBNj2MoUWUu1RM9LCMNVFIjLUyoIQv4nT/SBiNgV3yHDp3+1BZfxoQegfvKROp1x5Rer6qeOPEN0MhWWUKW72Ssh+QTtbOMyfvA2lBok1oWPQMK0haLSpcclCQ95rb5AlpyoSzIdxoQ3RFVsM9PTLs7vc4vKl0Ypg4tBQ188xVTBAAiw4Mo4FDwzlXof69awV0WF6vv3k78sRaThY5POF/KBnF/sqzUursWdYCVCByD9o8+UuZ6WV3ZvLh5Aqx4NXgvCVMgKm++oRjfwuUAc=",
+  "unlockCoinLv3": 2,
+  "hardPointPerm": 8,
+  "hardPointTemp": 4,
+  "crisisRuneCoinUnlockItemTitle": "Exchange Details",
+  "crisisRuneCoinUnlockItemDesc": "At the end of the season, all obtained Operational Agreements can be exchanged for a corresponding amount of resources regardless of whether or not they've been used.\nYou must log in to the Contingency Contract system to access them."
+}

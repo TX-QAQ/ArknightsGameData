@@ -5,7 +5,7 @@
 CollectionMainDlg = Class("CollectionMainDlg", DlgBase);
 
 function CollectionMainDlg:OnInit()
-  self.m_activityId = self.m_context:GetData("actId");
+  self.m_activityId = self.m_parent:GetData("actId");
   self.m_itemList = {};
   self:_RefreshContent();
 
@@ -35,14 +35,26 @@ function CollectionMainDlg:_RefreshContent()
   ---@param activityData ActivityTable.BasicData
   local activityData = CollectionActModel.me:FindBasicInfo(self.m_activityId);
   if activityData then
-    local start = CS.Torappu.DateTimeUtil.TimeStampToDateTime(activityData.startTime);
     local endt = CS.Torappu.DateTimeUtil.TimeStampToDateTime(activityData.endTime);
     local timeRemain = endt - CS.Torappu.DateTimeUtil.currentTime;
 
     self._timeDesc.text = CS.Torappu.Lua.Util.Format(CS.Torappu.StringRes.ACTIVITY_3D5_TIME_DESC, 
-      start.Month, start.Day, start.Hour, start.Minute,
-      endt.Month, endt.Day, endt.Hour, endt.Minute,
+      endt.Year, endt.Month, endt.Day, endt.Hour, endt.Minute,
       CS.Torappu.FormatUtil.FormatTimeDelta(timeRemain));
+  end
+
+  --ap time
+  self._apSupplyTime.text = "";
+  if itemsInCfg.apSupplyOutOfDateDict then
+    for apid, endtime in pairs(itemsInCfg.apSupplyOutOfDateDict) do
+      local apItemData = CS.Torappu.UI.UIItemViewModel();
+      apItemData:LoadGameData(apid, CS.Torappu.ItemType.NONE);
+      local dateTime = CS.Torappu.DateTimeUtil.TimeStampToDateTime(endtime);
+      local timedesc = CS.Torappu.Lua.Util.Format(CS.Torappu.StringRes.DATE_FORMAT_YYYY_MM_DD_HH_MM,dateTime.Year, dateTime.Month, dateTime.Day,dateTime.Hour,dateTime.Minute);
+      local str = CS.Torappu.I18N.StringMap.Get("ACTIVITY_3D5_APTIME_DESC");
+      self._apSupplyTime.text = CS.Torappu.Lua.Util.Format(str, apItemData.name, timedesc);
+      break;
+    end
   end
 
   ---@param collectStatus PlayerActivity.PlayerCollectionTypeActivity 
@@ -113,7 +125,7 @@ function CollectionMainDlg:_SynPrg(collections, completeIdx, pointCurCnt, lastCa
   if completeIdx >= collen and pointCurCnt > collections[collen].pointCnt then
     prgValue = prgMax;
   else
-    prgValue = itemWidth * (completeIdx - 0.5);
+    prgValue = itemWidth * math.max(0, (completeIdx - 0.5));
 
     local curPoint = 0;
     if completeIdx >= 1 then
@@ -186,7 +198,6 @@ function CollectionMainDlg:_CheckMissionStatus()
       onProceed = Event.Create(self, self._RefreshContent);
 
       onBlock = Event.CreateStatic(function(error)
-        CS.Torappu.Lua.Util.LogError(error.error);
         return true;
       end);
     });
@@ -194,7 +205,7 @@ function CollectionMainDlg:_CheckMissionStatus()
 end
 
 function CollectionMainDlg:_HandleOpenHelpPage()
-  local dlg = DlgMgr.FetchDlg(CollectionTaskListDlg);
+  local dlg = self:FetchChildDlg(CollectionTaskListDlg);
   dlg:Refresh(self.m_activityId, Event.Create(self, self._HandleHelpViewClose) );
   self._scrollView.gameObject:SetActive(false);
 end

@@ -2437,7 +2437,7 @@
         },
         "description": {
           "m_defined": true,
-          "m_value": "相比一般工蚁拥有更强的生存能力，且本次作战中<@eb.key>防御力</>得到了大幅度强化。"
+          "m_value": "<@eb.key>저지하는 게 불가능하며</>, 본 작전에서는 <@eb.key>방어력</>이 대폭 강화되었다."
         },
         "prefabKey": {
           "m_defined": false,

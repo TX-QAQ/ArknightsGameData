@@ -1,7 +1,7 @@
----@class CollectionMainDlg:DlgBase
----@field m_activityId string
----@field m_collections ActivityCollectionData.CollectionInfo[]
----@field m_itemList CollectionItem[]
+
+
+
+
 CollectionMainDlg = Class("CollectionMainDlg", DlgBase);
 
 function CollectionMainDlg:OnInit()
@@ -15,8 +15,8 @@ end
 function CollectionMainDlg:_RefreshContent()
   self:_CheckMissionStatus();
 
-  ---@param itemsInCfg ActivityCollectionData
-  ---@param suc boolean
+  
+  
   local suc, itemsInCfg = CS.Torappu.ActivityDB.data.activity.defaultCollectionData:TryGetValue(self.m_activityId);
   if not suc then
     return;
@@ -24,28 +24,40 @@ function CollectionMainDlg:_RefreshContent()
 
   self:AddButtonClickListener(self._redirectBtn, self._HandleScrollTo);
 
-  ---@type ActivityCollectionData.CollectionInfo[]
+  
   local collections = ToLuaArray(itemsInCfg.collections);
   table.sort(collections, function(a, b) 
     return a.pointCnt < b.pointCnt; 
   end);
   self.m_collections = collections;
 
-  --time desc
-  ---@param activityData ActivityTable.BasicData
+  
+  
   local activityData = CollectionActModel.me:FindBasicInfo(self.m_activityId);
   if activityData then
-    local start = CS.Torappu.DateTimeUtil.TimeStampToDateTime(activityData.startTime);
     local endt = CS.Torappu.DateTimeUtil.TimeStampToDateTime(activityData.endTime);
     local timeRemain = endt - CS.Torappu.DateTimeUtil.currentTime;
 
     self._timeDesc.text = CS.Torappu.Lua.Util.Format(CS.Torappu.StringRes.ACTIVITY_3D5_TIME_DESC, 
-      start.Month, start.Day, start.Hour, start.Minute,
-      endt.Month, endt.Day, endt.Hour, endt.Minute,
+      endt.Year, endt.Month, endt.Day, endt.Hour, endt.Minute,
       CS.Torappu.FormatUtil.FormatTimeDelta(timeRemain));
   end
 
-  ---@param collectStatus PlayerActivity.PlayerCollectionTypeActivity 
+  
+  self._apSupplyTime.text = "";
+  if itemsInCfg.apSupplyOutOfDateDict then
+    for apid, endtime in pairs(itemsInCfg.apSupplyOutOfDateDict) do
+      local apItemData = CS.Torappu.UI.UIItemViewModel();
+      apItemData:LoadGameData(apid, CS.Torappu.ItemType.NONE);
+      local dateTime = CS.Torappu.DateTimeUtil.TimeStampToDateTime(endtime);
+      local timedesc = CS.Torappu.Lua.Util.Format(CS.Torappu.StringRes.DATE_FORMAT_YYYY_MM_DD_HH_MM,dateTime.Year, dateTime.Month, dateTime.Day,dateTime.Hour,dateTime.Minute);
+      local str = CS.Torappu.I18N.StringMap.Get("ACTIVITY_3D5_APTIME_DESC");
+      self._apSupplyTime.text = CS.Torappu.Lua.Util.Format(str, apItemData.name, timedesc);
+      break;
+    end
+  end
+
+  
   local suc, collectStatus = CS.Torappu.PlayerData.instance.data.activity.collectionActivityList:TryGetValue(self.m_activityId);
   if not suc then 
   collectStatus = CS.Torappu.PlayerActivity.PlayerCollectionTypeActivity();
@@ -97,14 +109,14 @@ function CollectionMainDlg:_RefreshContent()
     end
   end
 
-  --calculate the progress
+  
   self:_SynPrg(collections, completeIdx, pointCurCnt, lastCanGetIdx);
 end
 
----@param collections ActivityCollectionData.CollectionInfo[]
----@param completeIdx int
----@param pointCurCnt int
----@param lastCanGetIdx int
+
+
+
+
 function CollectionMainDlg:_SynPrg(collections, completeIdx, pointCurCnt, lastCanGetIdx)
   local collen = #collections;
   local itemWidth = self._itemPrefab:rectTransform().sizeDelta.x;
@@ -152,19 +164,19 @@ function CollectionMainDlg:_CheckMissionStatus()
   end
 
   local missions = CS.Torappu.PlayerData.instance.data.mission.missions;
-  ---@param typeMissions Dictionary<string, MissionPlayerState>
+  
   local suc, typeMissions = missions:TryGetValue(CS.Torappu.MissionPlayerDataGroup.MissionTypeString.ACTIVITY);
   if not suc then
     return;
   end
 
 
-  ---@type string[]
+  
   local confirmedMissionIds = {};
 
   for idx = 0, missionGrp.missionIds.Length - 1 do
     local missionId = missionGrp.missionIds[idx];
-    ---@param missionPlayerData MissionPlayerState
+    
     local suc, missionPlayerData = typeMissions:TryGetValue( missionId);
 
     if suc and missionPlayerData.state == CS.Torappu.MissionHoldingState.CONFIRMED 
@@ -203,8 +215,8 @@ function CollectionMainDlg:_HandleHelpViewClose()
 end
 
 function CollectionMainDlg:_HandleScrollTo()
-  --find big reward
-  ---@param itemsInCfg ActivityCollectionData
+  
+  
   local suc, itemsInCfg = CS.Torappu.ActivityDB.data.activity.defaultCollectionData:TryGetValue(self.m_activityId)
   if not suc then
     return;
@@ -224,8 +236,8 @@ function CollectionMainDlg:_HandleScrollTo()
   end
 end
 
----@param itemIdx int
----@param totalCount int
+
+
 function CollectionMainDlg:_CalculateItemScrollPrg(itemIdx, totalCount)
   local viewWidth = self._scrollView:rectTransform().sizeDelta.x;
   local itemWidth = self._itemPrefab:rectTransform().sizeDelta.x;

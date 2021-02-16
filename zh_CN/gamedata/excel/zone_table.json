@@ -91,6 +91,32 @@
       "lockedText": "完成上一章以解锁",
       "canPreview": true
     },
+    "main_7": {
+      "zoneID": "main_7",
+      "zoneIndex": 7,
+      "type": "MAINLINE",
+      "zoneNameFirst": "第七章",
+      "zoneNameSecond": "苦难摇篮",
+      "zoneNameTitleCurrent": "07",
+      "zoneNameTitleUnCurrent": "07",
+      "zoneNameTitleEx": "EPISODE",
+      "zoneNameThird": "EPISODE 07",
+      "lockedText": "完成上一章以解锁",
+      "canPreview": true
+    },
+    "main_8": {
+      "zoneID": "main_8",
+      "zoneIndex": 8,
+      "type": "MAINLINE",
+      "zoneNameFirst": "第八章",
+      "zoneNameSecond": "怒号光明",
+      "zoneNameTitleCurrent": "08",
+      "zoneNameTitleUnCurrent": "08",
+      "zoneNameTitleEx": "EPISODE",
+      "zoneNameThird": "EPISODE 08",
+      "lockedText": "完成上一章以解锁",
+      "canPreview": true
+    },
     "weekly_1": {
       "zoneID": "weekly_1",
       "zoneIndex": 1,
@@ -208,19 +234,6 @@
       "lockedText": "当前不可进入",
       "canPreview": false
     },
-    "camp_1": {
-      "zoneID": "camp_1",
-      "zoneIndex": 0,
-      "type": "CAMPAIGN",
-      "zoneNameFirst": null,
-      "zoneNameSecond": "剿灭作战",
-      "zoneNameTitleCurrent": null,
-      "zoneNameTitleUnCurrent": null,
-      "zoneNameTitleEx": null,
-      "zoneNameThird": null,
-      "lockedText": "",
-      "canPreview": false
-    },
     "guide_1": {
       "zoneID": "guide_1",
       "zoneIndex": 0,
@@ -232,6 +245,357 @@
       "zoneNameTitleEx": null,
       "zoneNameThird": null,
       "lockedText": "",
+      "canPreview": false
+    },
+    "camp_zone_1": {
+      "zoneID": "camp_zone_1",
+      "zoneIndex": 0,
+      "type": "CAMPAIGN",
+      "zoneNameFirst": null,
+      "zoneNameSecond": null,
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "camp_zone_3": {
+      "zoneID": "camp_zone_3",
+      "zoneIndex": 0,
+      "type": "CAMPAIGN",
+      "zoneNameFirst": null,
+      "zoneNameSecond": null,
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "camp_zone_4": {
+      "zoneID": "camp_zone_4",
+      "zoneIndex": 0,
+      "type": "CAMPAIGN",
+      "zoneNameFirst": null,
+      "zoneNameSecond": null,
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act16d5_zone1": {
+      "zoneID": "act16d5_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "入画",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act16d5_zone2": {
+      "zoneID": "act16d5_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "出画",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act15d5_zone1": {
+      "zoneID": "act15d5_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "异地派遣",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act15d0_zone1": {
+      "zoneID": "act15d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "越狱计划",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act15d0_zone2": {
+      "zoneID": "act15d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "狱中生活",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act14d7_zone1": {
+      "zoneID": "act14d7_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "下城区",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act14d7_zone2": {
+      "zoneID": "act14d7_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "东部郊区",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act13d5_zone1": {
+      "zoneID": "act13d5_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "大竞技场",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act13d5_zone2": {
+      "zoneID": "act13d5_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": " 钳兽牢笼",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act13d2_zone1": {
+      "zoneID": "act13d2_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "滴水村周边",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act13d2_zone2": {
+      "zoneID": "act13d2_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "宝藏之路",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act13d0_zone1": {
+      "zoneID": "act13d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "时光长河",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act12d0_zone1": {
+      "zoneID": "act12d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "大酋长之路",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act12d0_zone2": {
+      "zoneID": "act12d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "嘉维尔足迹",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d7_zone1": {
+      "zoneID": "act11d7_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "主舞台",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d7_zone2": {
+      "zoneID": "act11d7_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "嘉年华",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d7_zone3": {
+      "zoneID": "act11d7_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "额外节目",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d0_zone1": {
+      "zoneID": "act11d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "议事高塔",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d0_zone2": {
+      "zoneID": "act11d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "沉寂边陲",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d0_zone3": {
+      "zoneID": "act11d0_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "冬灵栈道",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act10d5_zone1": {
+      "zoneID": "act10d5_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "课程安排",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act9d0_zone1": {
+      "zoneID": "act9d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "阵中往事",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act9d0_zone2": {
+      "zoneID": "act9d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "破败前线",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act9d0_zone3": {
+      "zoneID": "act9d0_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "战火回想",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
       "canPreview": false
     },
     "act5d0_zone1": {
@@ -413,6 +777,102 @@
     }
   },
   "zoneValidInfo": {
+    "act16d5_zone1": {
+      "startTs": 1612512000,
+      "endTs": 1613678399
+    },
+    "act16d5_zone2": {
+      "startTs": 1613116800,
+      "endTs": 1613678399
+    },
+    "act15d5_zone1": {
+      "startTs": 1609833600,
+      "endTs": 1610395199
+    },
+    "act15d0_zone1": {
+      "startTs": 1608177600,
+      "endTs": 1609358399
+    },
+    "act15d0_zone2": {
+      "startTs": 1608796800,
+      "endTs": 1609358399
+    },
+    "act14d7_zone1": {
+      "startTs": 1606809600,
+      "endTs": 1607630399
+    },
+    "act14d7_zone2": {
+      "startTs": 1606809600,
+      "endTs": 1607630399
+    },
+    "act13d5_zone1": {
+      "startTs": 1602748800,
+      "endTs": 1603915199
+    },
+    "act13d5_zone2": {
+      "startTs": 1603353600,
+      "endTs": 1603915199
+    },
+    "act13d2_zone1": {
+      "startTs": 1601539200,
+      "endTs": 1602359999
+    },
+    "act13d2_zone2": {
+      "startTs": 1601539200,
+      "endTs": 1602359999
+    },
+    "act13d0_zone1": {
+      "startTs": 1600920000,
+      "endTs": 1601495999
+    },
+    "act12d0_zone1": {
+      "startTs": 1598328000,
+      "endTs": 1599508799
+    },
+    "act12d0_zone2": {
+      "startTs": 1598947200,
+      "endTs": 1599508799
+    },
+    "act11d7_zone1": {
+      "startTs": 1597132800,
+      "endTs": 1597953599
+    },
+    "act11d7_zone2": {
+      "startTs": 1597132800,
+      "endTs": 1597953599
+    },
+    "act11d7_zone3": {
+      "startTs": 1597132800,
+      "endTs": 1597953599
+    },
+    "act11d0_zone1": {
+      "startTs": 1594267200,
+      "endTs": 1595447999
+    },
+    "act11d0_zone2": {
+      "startTs": 1594886400,
+      "endTs": 1595447999
+    },
+    "act11d0_zone3": {
+      "startTs": 1594886400,
+      "endTs": 1595447999
+    },
+    "act10d5_zone1": {
+      "startTs": 1592467200,
+      "endTs": 1593028799
+    },
+    "act9d0_zone1": {
+      "startTs": 1587441600,
+      "endTs": 1589486399
+    },
+    "act9d0_zone2": {
+      "startTs": 1588060800,
+      "endTs": 1589486399
+    },
+    "act9d0_zone3": {
+      "startTs": 1588665600,
+      "endTs": 1589486399
+    },
     "act5d0_zone1": {
       "startTs": 1574150400,
       "endTs": 1575316799

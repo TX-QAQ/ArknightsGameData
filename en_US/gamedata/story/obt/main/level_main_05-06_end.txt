@@ -1,7 +1,4 @@
 [HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 第五关（后）
-
-// Comments
-
 [Background(image="bg_emporium", width=1, height=1,screenadapt="coverall",  fadetime=1)]
 [PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.8, crossfade=1.5, delay=0.5)]
 [Delay(time=1)]
@@ -9,7 +6,7 @@
 [Delay(time=1)]
 [name="Hoshiguma"]  That was easier than I expected. Really makes me more and more curious as to what happened in Chernobog.
 [Character(name="char_136_hsguma",name2="char_010_chen_1#1",focus=2)]
-[name="Ch'en"]  Perhaps it's the same thing as what happened here, except the roots sank in deeper and the flames burned with more intensity.Don't let your guard down.
+[name="Ch'en"]  Perhaps it's the same thing as what happened here, except the roots sank in deeper and the flames burned with more intensity. Don't let your guard down.
 [Character(name="char_136_hsguma",name2="char_010_chen_1#1",focus=1)]
 [name="Hoshiguma"]  You should know that I rarely close my eyes when I'm sleeping.
 [name="Hoshiguma"]  Ugh. I was trying to end the fighting as soon as possible, but we still ended up damaging so many shops.
@@ -44,12 +41,11 @@
 [Character(name="char_010_chen_1#1")]
 [name="Ch'en"]  C3, Ch'en here. Clear the first floor and push forward slowly. Safety first.
 [Character(name="char_136_hsguma",name2="char_010_chen_1#1",focus=1)]
-[name="Hoshiguma"]  I guess so. This patch of dirt truly is unfair. Phal died, but I'm the one who lives on.
+[name="Hoshiguma"]  I guess so. This patch of dirt truly is unfair. Phal died, but I get to live on.
 [name="Hoshiguma"]  They all died, and only I got to live.
 [name="Hoshiguma"]  Ch'en. Is that intel really worthwhile?
 [Character(name="char_136_hsguma",name2="char_010_chen_1#1",focus=2)]
 [name="Ch'en"]  It has to be.
-
 [Dialog]
 [Character]
 [stopmusic(fadetime=1)]
@@ -59,11 +55,9 @@
 [Dialog]
 [Blocker(a=1, r=0,g=0, b=0, fadetime=1,block=true)]
 [Blocker(a=0, fadetime=1, block=true)]
-
 [Character(name="char_015_lmg")]
 [name="L.G.D. Agent"]  Madam Ch'en! Run!! We've found a large number of explosives on the third floor!
 [PlayMusic(intro="$escapebattle_intro", key="$escapebattle_loop", volume=0.5, crossfade=1.5, delay=0.5)]
-
 [name="L.G.D. Agent"]  Right under where you're standing!!
 [Character(name="char_1011_wizard_1")]
 [name="Reunion Caster"]  L.G.D., prepare to meet your makers!
@@ -86,7 +80,6 @@
 [Blocker(a=0, fadetime=0.2, block=true)]
 [CameraShake(duration=1, xstrength=15, ystrength=10, vibrato=30, randomness=90, fadeout=true)]
 [Delay(time=1)]
-
 [Blocker(a=1, fadetime=1, block=true)]
 [Background]
 [Background(image="avg_5_5_fall_back", xScale=1.3, yScale=1.3, fadetime=1)]

@@ -65,6 +65,45 @@
       "lockedText": "이전 에피소드를 완료하여 주십시오.",
       "canPreview": true
     },
+    "main_5": {
+      "zoneID": "main_5",
+      "zoneIndex": 5,
+      "type": "MAINLINE",
+      "zoneNameFirst": "에피소드 5",
+      "zoneNameSecond": "표적치료",
+      "zoneNameTitleCurrent": "05",
+      "zoneNameTitleUnCurrent": "05",
+      "zoneNameTitleEx": "EPISODE",
+      "zoneNameThird": "EPISODE 05",
+      "lockedText": "이전 에피소드를 완료하여 주십시오.",
+      "canPreview": true
+    },
+    "main_6": {
+      "zoneID": "main_6",
+      "zoneIndex": 6,
+      "type": "MAINLINE",
+      "zoneNameFirst": "에피소드 6",
+      "zoneNameSecond": "부분괴사",
+      "zoneNameTitleCurrent": "06",
+      "zoneNameTitleUnCurrent": "06",
+      "zoneNameTitleEx": "EPISODE",
+      "zoneNameThird": "EPISODE 06",
+      "lockedText": "이전 에피소드를 완료하여 주십시오.",
+      "canPreview": true
+    },
+    "main_7": {
+      "zoneID": "main_7",
+      "zoneIndex": 7,
+      "type": "MAINLINE",
+      "zoneNameFirst": "에피소드 7",
+      "zoneNameSecond": "고난의 요람",
+      "zoneNameTitleCurrent": "07",
+      "zoneNameTitleUnCurrent": "07",
+      "zoneNameTitleEx": "EPISODE",
+      "zoneNameThird": "EPISODE 07",
+      "lockedText": "이전 에피소드를 완료하여 주십시오.",
+      "canPreview": true
+    },
     "weekly_1": {
       "zoneID": "weekly_1",
       "zoneIndex": 1,
@@ -208,12 +247,233 @@
       "lockedText": "",
       "canPreview": false
     },
+    "act11d7_zone1": {
+      "zoneID": "act11d7_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "메인 무대",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d7_zone2": {
+      "zoneID": "act11d7_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "카니발",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d7_zone3": {
+      "zoneID": "act11d7_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "앵콜 무대",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act9d0_zone1": {
+      "zoneID": "act9d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "전장의 옛 이야기",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act9d0_zone2": {
+      "zoneID": "act9d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "무너진 전선",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act9d0_zone3": {
+      "zoneID": "act9d0_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "전장의 회상",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act13d2_zone1": {
+      "zoneID": "act13d2_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "물방울 마을",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act13d2_zone2": {
+      "zoneID": "act13d2_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "보물의 길",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d0_zone1": {
+      "zoneID": "act11d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "대의회탑",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d0_zone2": {
+      "zoneID": "act11d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "고요한 변경",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d0_zone3": {
+      "zoneID": "act11d0_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "윈터위습의 벼랑길",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act10d5_zone1": {
+      "zoneID": "act10d5_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "수업 시간표",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act5d0_zone1": {
+      "zoneID": "act5d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "다운타운",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act5d0_zone2": {
+      "zoneID": "act5d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "동부 교외 지역",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "A003_zone1": {
+      "zoneID": "A003_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "메인 무대",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "A003_zone2": {
+      "zoneID": "A003_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "카니발",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "A003_zone3": {
+      "zoneID": "A003_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "앵콜 무대",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
     "A001_zone1": {
       "zoneID": "A001_zone1",
       "zoneIndex": 0,
       "type": "ACTIVITY",
       "zoneNameFirst": null,
-      "zoneNameSecond": "물방울 굿즈",
+      "zoneNameSecond": "물방울 마을",
       "zoneNameTitleCurrent": null,
       "zoneNameTitleUnCurrent": null,
       "zoneNameTitleEx": null,
@@ -322,6 +582,74 @@
     }
   },
   "zoneValidInfo": {
+    "act11d7_zone1": {
+      "startTs": 1611118800,
+      "endTs": 1611946799
+    },
+    "act11d7_zone2": {
+      "startTs": 1611118800,
+      "endTs": 1611946799
+    },
+    "act11d7_zone3": {
+      "startTs": 1611118800,
+      "endTs": 1611946799
+    },
+    "act9d0_zone1": {
+      "startTs": 1607576400,
+      "endTs": 1609354799
+    },
+    "act9d0_zone2": {
+      "startTs": 1608188400,
+      "endTs": 1609354799
+    },
+    "act9d0_zone3": {
+      "startTs": 1608793200,
+      "endTs": 1609354799
+    },
+    "act13d2_zone1": {
+      "startTs": 1606366800,
+      "endTs": 1607194799
+    },
+    "act13d2_zone2": {
+      "startTs": 1606366800,
+      "endTs": 1607194799
+    },
+    "act11d0_zone1": {
+      "startTs": 1603861200,
+      "endTs": 1605034799
+    },
+    "act11d0_zone2": {
+      "startTs": 1604473200,
+      "endTs": 1605034799
+    },
+    "act11d0_zone3": {
+      "startTs": 1604473200,
+      "endTs": 1605034799
+    },
+    "act10d5_zone1": {
+      "startTs": 1601344800,
+      "endTs": 1602183599
+    },
+    "act5d0_zone1": {
+      "startTs": 1590544800,
+      "endTs": 1591729199
+    },
+    "act5d0_zone2": {
+      "startTs": 1591167600,
+      "endTs": 1591729199
+    },
+    "A003_zone1": {
+      "startTs": 1588136400,
+      "endTs": 1589309999
+    },
+    "A003_zone2": {
+      "startTs": 1588136400,
+      "endTs": 1589309999
+    },
+    "A003_zone3": {
+      "startTs": 1588748400,
+      "endTs": 1589309999
+    },
     "A001_zone1": {
       "startTs": 1580886000,
       "endTs": 1582052399

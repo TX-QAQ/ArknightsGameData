@@ -65,6 +65,45 @@
       "lockedText": "Clear the previous chapter to unlock",
       "canPreview": true
     },
+    "main_5": {
+      "zoneID": "main_5",
+      "zoneIndex": 5,
+      "type": "MAINLINE",
+      "zoneNameFirst": "Episode 5",
+      "zoneNameSecond": "Necessary Solutions",
+      "zoneNameTitleCurrent": "05",
+      "zoneNameTitleUnCurrent": "05",
+      "zoneNameTitleEx": "EPISODE",
+      "zoneNameThird": "EPISODE 05",
+      "lockedText": "Clear the previous chapter to unlock",
+      "canPreview": true
+    },
+    "main_6": {
+      "zoneID": "main_6",
+      "zoneIndex": 6,
+      "type": "MAINLINE",
+      "zoneNameFirst": "Episode 6",
+      "zoneNameSecond": "Partial Necrosis",
+      "zoneNameTitleCurrent": "06",
+      "zoneNameTitleUnCurrent": "06",
+      "zoneNameTitleEx": "EPISODE",
+      "zoneNameThird": "EPISODE 06",
+      "lockedText": "Clear the previous chapter to unlock",
+      "canPreview": true
+    },
+    "main_7": {
+      "zoneID": "main_7",
+      "zoneIndex": 7,
+      "type": "MAINLINE",
+      "zoneNameFirst": "Episode 7",
+      "zoneNameSecond": "The Birth of Tragedy",
+      "zoneNameTitleCurrent": "07",
+      "zoneNameTitleUnCurrent": "07",
+      "zoneNameTitleEx": "EPISODE",
+      "zoneNameThird": "EPISODE 07",
+      "lockedText": "Clear the previous chapter to unlock",
+      "canPreview": true
+    },
     "weekly_1": {
       "zoneID": "weekly_1",
       "zoneIndex": 1,
@@ -208,6 +247,227 @@
       "lockedText": "",
       "canPreview": false
     },
+    "act11d7_zone1": {
+      "zoneID": "act11d7_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Main Stage",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d7_zone2": {
+      "zoneID": "act11d7_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Carnival",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d7_zone3": {
+      "zoneID": "act11d7_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Extra Show",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act9d0_zone1": {
+      "zoneID": "act9d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Tales of Battle",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act9d0_zone2": {
+      "zoneID": "act9d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Shattered Front",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act9d0_zone3": {
+      "zoneID": "act9d0_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Memories of War",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act13d2_zone1": {
+      "zoneID": "act13d2_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Dewville Outskirts",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act13d2_zone2": {
+      "zoneID": "act13d2_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Path to Treasure",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d0_zone1": {
+      "zoneID": "act11d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Capitol Spire",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d0_zone2": {
+      "zoneID": "act11d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Silent Frontier",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act11d0_zone3": {
+      "zoneID": "act11d0_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Winterwisp Way",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act10d5_zone1": {
+      "zoneID": "act10d5_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Class Schedule",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act5d0_zone1": {
+      "zoneID": "act5d0_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Downtown",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "act5d0_zone2": {
+      "zoneID": "act5d0_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "East Downtown",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "A003_zone1": {
+      "zoneID": "A003_zone1",
+      "zoneIndex": 0,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Main Stage",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "A003_zone2": {
+      "zoneID": "A003_zone2",
+      "zoneIndex": 1,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Carnival",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
+    "A003_zone3": {
+      "zoneID": "A003_zone3",
+      "zoneIndex": 2,
+      "type": "ACTIVITY",
+      "zoneNameFirst": null,
+      "zoneNameSecond": "Extra Show",
+      "zoneNameTitleCurrent": null,
+      "zoneNameTitleUnCurrent": null,
+      "zoneNameTitleEx": null,
+      "zoneNameThird": null,
+      "lockedText": null,
+      "canPreview": false
+    },
     "A001_zone1": {
       "zoneID": "A001_zone1",
       "zoneIndex": 0,
@@ -322,6 +582,74 @@
     }
   },
   "zoneValidInfo": {
+    "act11d7_zone1": {
+      "startTs": 1611154800,
+      "endTs": 1612004399
+    },
+    "act11d7_zone2": {
+      "startTs": 1611154800,
+      "endTs": 1612004399
+    },
+    "act11d7_zone3": {
+      "startTs": 1611154800,
+      "endTs": 1612004399
+    },
+    "act9d0_zone1": {
+      "startTs": 1607612400,
+      "endTs": 1609412399
+    },
+    "act9d0_zone2": {
+      "startTs": 1608246000,
+      "endTs": 1609412399
+    },
+    "act9d0_zone3": {
+      "startTs": 1608850800,
+      "endTs": 1609412399
+    },
+    "act13d2_zone1": {
+      "startTs": 1606402800,
+      "endTs": 1607252399
+    },
+    "act13d2_zone2": {
+      "startTs": 1606402800,
+      "endTs": 1607252399
+    },
+    "act11d0_zone1": {
+      "startTs": 1603897200,
+      "endTs": 1605092399
+    },
+    "act11d0_zone2": {
+      "startTs": 1604530800,
+      "endTs": 1605092399
+    },
+    "act11d0_zone3": {
+      "startTs": 1604530800,
+      "endTs": 1605092399
+    },
+    "act10d5_zone1": {
+      "startTs": 1601402400,
+      "endTs": 1602241199
+    },
+    "act5d0_zone1": {
+      "startTs": 1590602400,
+      "endTs": 1591786799
+    },
+    "act5d0_zone2": {
+      "startTs": 1591225200,
+      "endTs": 1591786799
+    },
+    "A003_zone1": {
+      "startTs": 1588194000,
+      "endTs": 1589367599
+    },
+    "A003_zone2": {
+      "startTs": 1588194000,
+      "endTs": 1589367599
+    },
+    "A003_zone3": {
+      "startTs": 1588806000,
+      "endTs": 1589367599
+    },
     "A001_zone1": {
       "startTs": 1580943600,
       "endTs": 1582109999

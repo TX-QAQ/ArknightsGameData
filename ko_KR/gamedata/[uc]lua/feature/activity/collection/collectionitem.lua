@@ -52,7 +52,7 @@ function CollectionItem:Refresh(activityId,  data, reached, geted, cfg)
 
 
   if self.m_itemCell == nil then
-    local itemCard = CS.Torappu.UI.UIAssetLoader.instance.activityOutlinks.uiItemCard;
+    local itemCard = CS.Torappu.UI.UIAssetLoader.instance.staticOutlinks.uiItemCard;
     self.m_itemCell = CS.UnityEngine.GameObject.Instantiate(itemCard, self._rewardIconRoot):GetComponent("Torappu.UI.UIItemCard");
     self.m_itemCell.isCardClickable = true;
     self.m_itemCell:CloseBtnTransition();
@@ -64,7 +64,7 @@ function CollectionItem:Refresh(activityId,  data, reached, geted, cfg)
 
   self.m_itemCell.showBackground = data.showIconBG;
   self.m_itemCell:Render(0, rewardItemData);
-  self:AsignDelegate(self.m_itemCell, "onItemClick", function(index)
+  self:AsignDelegate(self.m_itemCell, "onItemClick", function(this, index)
     CS.Torappu.UI.UIItemDescFloatController.ShowItemDesc(self.m_itemCell.gameObject, rewardItemData);
   end);
 
@@ -138,6 +138,10 @@ function CollectionItem:Flash()
 end
 
 function CollectionItem:_HandleGetReward()
+  if CS.Torappu.UI.UISyncDataUtil.instance:CheckCrossDaysAndResync() then
+    return;
+  end
+  
   UISender.me:SendRequest(ActivityServiceCode.GET_COLLECTION_REWARD,
   {
     index = self.m_data.id,

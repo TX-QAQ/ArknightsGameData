@@ -1,15 +1,16 @@
----@class UIBase
----@field m_parent ILuaDialog
----@field m_root GameObject
----@field m_layout LuaLayout
----@field m_rootDestroying boolean
----@field m_destroyed boolean
----@field m_doWhenClose function[]
----@field m_allTimer number[]
+
+
+
+
+
+
+
+
+
 UIBase = Class("UIBase");
 
----@param gobj GameObject
----@param parent ILuaDialog
+
+
 function UIBase:Initialize(gobj, parent)
   self.m_destroyed = false;
   self.m_rootDestroying = false;
@@ -20,6 +21,9 @@ function UIBase:Initialize(gobj, parent)
   self.m_layout:TraverseCtrlDefines(function(name, ctrl)
     this["_"..name] = ctrl;
   end);
+  self.m_layout:TraverseValueDefines(function(name, value)
+    this["_"..name] = value
+  end)
 
   self:OnInitialize();
   self.m_layout:BindLayoutEventListener(self);
@@ -34,6 +38,14 @@ function UIBase:Dispose()
   end
 
   self:OnDispose();
+
+  if self.m_allCustomComponents then
+    for _, com in ipairs(self.m_allCustomComponents) do
+        if com.Dispose then
+            com:Dispose();
+        end
+    end
+  end
 
   if self.m_doWhenClose then
     for _, func in ipairs(self.m_doWhenClose) do
@@ -57,29 +69,41 @@ function UIBase:Dispose()
 
 end
 
----@protected
+
 function UIBase:OnInitialize()
 end
 
----@protected
+
 function UIBase:OnDispose()
 end
 
----@protected
+
 function UIBase:OnVisible(v)
 end
 
-function UIBase:Root()
+function UIBase:RootGameObject()
     return self.m_root;
+end
+
+
+function UIBase:OnResume()
+end
+
+
+function UIBase:OnEnter()
+end
+
+
+function UIBase:OnExit()
 end
 
 function UIBase:IsDestroy()
     return self.m_destroyed;
 end
 
----为btn注册点击事件
----@param btn Button|string
----@param func 
+
+
+
 function UIBase:AddButtonClickListener(btn, func, ...)
     if type(btn) == "string" then
         btn = self:GetButton(btn);
@@ -101,12 +125,28 @@ function UIBase:AddButtonClickListener(btn, func, ...)
     end);
 end
 
----为cs对象的代理赋值，在关闭时会自动把赋值清理掉
----@param obj object
----@param delegateName string
----@param func function
-function UIBase:AsignDelegate(obj, delegateName, func)
-    obj[delegateName] = func;
+
+
+
+
+
+
+
+function UIBase:AsignDelegate(obj, delegateName, func, ...)
+    local args = {...}
+    local this = self;
+    obj[delegateName] = function(...)
+        local params = {...}
+        if #params < 1 then
+            params = args;
+        elseif #args > 0 then
+            for _, v in ipairs(args) do
+                table.insert(params, v);
+            end
+        end
+        
+        func(this, table.unpack(params));
+    end
     
     self:_AddToDoWhenClose(function()
         if not CS.Torappu.Lua.Util.IsDestroyed(obj) then
@@ -115,7 +155,7 @@ function UIBase:AsignDelegate(obj, delegateName, func)
     end);
 end
 
----@private
+
 function UIBase:_AddToDoWhenClose(func)
     if not func then
         return;
@@ -126,7 +166,7 @@ function UIBase:_AddToDoWhenClose(func)
     table.insert(self.m_doWhenClose, func);
 end
 
----延时执行
+
 function UIBase:Delay(delay, func)
     local timer = TimerModel.me:Delay(delay, Event.Create(self, func));
     self:_RecordTimer(timer);
@@ -162,7 +202,7 @@ function UIBase:DestroyTimer(timer)
     end
 end
 
----@private
+
 function UIBase:_RecordTimer(timer)
     if not self.m_allTimer then
         self.m_allTimer = {};
@@ -170,17 +210,59 @@ function UIBase:_RecordTimer(timer)
     table.insert(self.m_allTimer, timer);
 end
 
----@private call by lualayout
+
+function UIBase:OpenPage(pageName, openType, options)
+    CS.Torappu.UI.UIPageController.OpenPage(pageName, openType, options)
+end
+
+
+
+
+
+function UIBase:OpenPage1(pageName)
+    CS.Torappu.UI.UIPageController.OpenPage(pageName)
+end
+
+
+
+
+function UIBase:OpenPage2(pageName, openType)
+    CS.Torappu.UI.UIPageController.OpenPage(pageName, openType)
+end
+
+
+
+
+function UIBase:OpenPage3(pageName, options)
+    CS.Torappu.UI.UIPageController.OpenPage(pageName, options)
+end
+
+
+
+
+
+
+function UIBase:CreateCustomComponent(comCls, ...)
+    if not self.m_allCustomComponents then
+        self.m_allCustomComponents = {};
+    end
+    local com = comCls.new();
+    com:Initialize(...);
+    table.insert(self.m_allCustomComponents, com);
+    return com;
+end
+
+
 function UIBase:OnEnable()
     self:OnVisible(true);
 end
 
----@private call by lualayout
+
 function UIBase:OnDisable()
     self:OnVisible(false);
 end
 
----@private call by lualayout
+
 function UIBase:OnDestroy()
     self.m_rootDestroying = true;
     self:Dispose();

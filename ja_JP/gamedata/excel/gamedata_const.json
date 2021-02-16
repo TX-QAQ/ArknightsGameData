@@ -1,5 +1,5 @@
 {
-  "maxPlayerLevel": 100,
+  "maxPlayerLevel": 120,
   "playerExpMap": [
     500,
     800,
@@ -100,7 +100,27 @@
     48000,
     49000,
     50000,
-    51000
+    51000,
+    52000,
+    54000,
+    56000,
+    58000,
+    60000,
+    62000,
+    64000,
+    66000,
+    68000,
+    70000,
+    73000,
+    76000,
+    79000,
+    82000,
+    85000,
+    88000,
+    91000,
+    94000,
+    97000,
+    100000
   ],
   "playerApMap": [
     82,
@@ -202,7 +222,27 @@
     130,
     130,
     130,
-    130
+    130,
+    131,
+    131,
+    131,
+    131,
+    132,
+    132,
+    132,
+    132,
+    133,
+    133,
+    133,
+    133,
+    134,
+    134,
+    134,
+    134,
+    135,
+    135,
+    135,
+    135
   ],
   "maxLevel": [
     [
@@ -832,9 +872,9 @@
     "char_500_noirc",
     "char_503_rang"
   ],
-  "attackMax": 1175.0,
-  "defMax": 783.0,
-  "hpMax": 4088.0,
+  "attackMax": 1210.0,
+  "defMax": 826.0,
+  "hpMax": 4225.0,
   "reMax": 100.0,
   "diamondToShdRate": 180,
   "baseMaxFriendNum": 15,
@@ -851,6 +891,8 @@
     -1
   ],
   "richTextStyles": {
+    "mission.levelname": "<color=#FFDE00>{0}</color>",
+    "mission.number": "<color=#FFDE00>{0}</color>",
     "lv.item": "<color=#FFFFFF>{0}</color>",
     "lv.rem": "<color=#FFFFFF>{0}</color>",
     "lv.fs": "<color=#FF0000>{0}</color>",
@@ -870,6 +912,9 @@
     "ba.talpu": "<color=#F49800>{0}</color>",
     "eb.key": "<color=#00FFFF>{0}</color>",
     "eb.danger": "<color=#FF0000>{0}</color>",
+    "ro.get": "<color=#0098DC>{0}</color>",
+    "ro.lose": "<color=#C82A36>{0}</color>",
+    "rolv.rem": "<color=#FF4C22>{0}</color>",
     "rc.title": "<color=#FFFFFF>{0}</color>",
     "rc.subtitle": "<color=#FFC90E>{0}</color>",
     "rc.em": "<color=#FF7F27>{0}</color>",
@@ -879,10 +924,24 @@
     "ga.up": "<color=#FF7F27>{0}</color>",
     "ga.adgacha": "<color=#00C8FF>{0}</color>",
     "ga.nbgacha": "<color=#00DDBB>{0}</color>",
+    "ga.limadgacha": "<color=#FF7E1F>{0}</color>",
     "ga.percent": "<color=#FFD800>{0}</color>",
     "ga.attention": "<color=#FF3126>{0}</color>",
+    "limtedga.title": "<color=#FFFFFF>{0}</color>",
+    "limtedga.subtitle": "<color=#FFC90E>{0}</color>",
+    "limtedga.up": "<color=#FF7F27>{0}</color>",
+    "limtedga.21": "<color=#D7BCFF>{0}</color>",
+    "limtedga.percent": "<color=#FFD800>{0}</color>",
+    "limtedga.attention": "<color=#E1322C>{0}</color>",
+    "limtedga.lattention": "<color=#FF9E58>{0}</color>",
+    "vc.newyear10": "<color=#FF3823>{0}</color>",
+    "vc.adgacha": "<color=#0098DC>{0}</color>",
+    "vc.attention": "<color=#FFD800>{0}</color>",
+    "act.missiontips": "<color=#d9bd6a>{0}</color>",
     "act.spreward": "<color=#FF5001>{0}</color>",
-    "act.timelimit": "<color=#ffe300>{0}</color>"
+    "act.timelimit": "<color=#ffe300>{0}</color>",
+    "vc.text": "<color=#898989>{0}</color>",
+    "vc.endtime": "<color=#ff0327>{0}</color>"
   },
   "charAssistRefreshTime": [
     {
@@ -902,6 +961,13 @@
   ],
   "commonPotentialLvlUpCount": 4,
   "weeklyOverrideDesc": "",
+  "voucherDiv": 5,
+  "v006RecruitTimeStep1Refresh": 1577169000,
+  "v006RecruitTimeStep2Check": 1577151000,
+  "v006RecruitTimeStep2Flush": 1577646000,
+  "buyApTimeNoLimitFlag": true,
+  "isLMGTSEnabled": true,
+  "crisisUnlockStage": "main_02-10",
   "legacyTime": 1562655600,
   "legacyItemList": [
     {
@@ -948,5 +1014,17 @@
   "pullForceZeroIndex": 3,
   "multiInComeByRank": [
     "獲得経験値・龍門幣ドロップ率0.0倍、獲得経験値・龍門幣ドロップ率0.0倍、獲得経験値・龍門幣ドロップ率0.0倍、獲得経験値・龍門幣ドロップ率0.0倍、"
-  ]
+  ],
+  "LMTGSToEPGSRatio": 6,
+  "newBeeGiftEPGS": 200,
+  "lMTGSDescConstOne": "すべての<@limtedGa.21>【リミテッドスカウト】</>において、スカウトを1回行う毎に<@limtedGa.attention>「限定契約証」</>を1枚獲得できます。（※10回スカウトの場合は、10枚の<@limtedGa.attention>「限定契約証」</>を獲得できます。）<@limtedGa.attention>「限定契約証」</>は、その時期の<@limtedGa.21>【リミテッドスカウト】</>で新たに登場したオペレーターの交換に使用することができます。",
+  "lMTGSDescConstTwo": "<@limtedGa.attention>【注意】</><@limtedGa.21>【リミテッドスカウト】</>で獲得した<@limtedGa.attention>「限定契約証」</>には使用期限があります。該当の<@limtedGa.attention>「限定契約証交換所」</>の交換期間が終了するまでに使用しなかった<@limtedGa.attention>「限定契約証」</>は、自動的に<@limtedGa.lAttention>「特別引換証」</>に交換されます。1枚のた<@limtedGa.attention>「限定契約証」</>につき、6枚の<@limtedGa.lAttention>「特別引換証」</>を入手できます。<@limtedGa.lAttention>「特別引換証」</>には使用期限がなく、<@limtedGa.lAttention>「特別引換証交換所」</>でアイテムを交換することができます。",
+  "defCDPrimColor": "FF1200",
+  "defCDSecColor": "FFFFFF",
+  "mailBannerType": [
+    "rhodesIsland"
+  ],
+  "monthlySubWarningTime": 345600,
+  "UnlimitSkinOutOfTime": 1209600,
+  "replicateShopStartTime": 1606366800
 }

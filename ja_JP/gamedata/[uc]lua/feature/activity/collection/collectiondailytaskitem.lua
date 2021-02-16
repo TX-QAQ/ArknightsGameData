@@ -18,12 +18,12 @@ function CollectionDailyTaskItem:Refresh(actId, cfg)
     self.m_itemCell:CloseBtnTransition();
     local scaler = self.m_itemCell:GetComponent("Torappu.UI.UIScaler");
     if scaler then
-      scaler.scale = 0.7
+      scaler.scale = cfg.taskItemScale;
     end
   end
   
   self.m_itemCell:Render(0, rewardData);
-  self:AsignDelegate(self.m_itemCell, "onItemClick", function(index)
+  self:AsignDelegate(self.m_itemCell, "onItemClick", function(this, index)
     CS.Torappu.UI.UIItemDescFloatController.ShowItemDesc(self.m_itemCell.gameObject, rewardData);
   end);
 
